@@ -202,6 +202,7 @@ const states = reactive({
       { name: "content", label: "Content", field: "content", sortable: true },
       { name: "start_date", label: "Start Date", field: "start_date", sortable: true },
       { name: "end_date", label: "End Date", field: "end_date", sortable: true },
+      { name: "active", label: "Active", field: "active", sortable: true },
     ],
     pagination: {
       page: 1,
