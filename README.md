@@ -61,7 +61,7 @@ To run the unit tests for the backend, you can use the following command:
 
 ```bash
 php artisan test
-``
+```
 
 ## Frontend Setup
 
