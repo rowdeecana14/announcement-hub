@@ -9,7 +9,7 @@
               <q-toolbar>
                 <q-toolbar-title class="text-center" ellipsis>
                   <q-avatar size="70px">
-                    <img src="../../assets/announcement.jpeg" />
+                    <img src="../../assets/ah.png" />
                   </q-avatar>
                   Announcement Hub
                 </q-toolbar-title>
