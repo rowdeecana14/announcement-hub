@@ -1,0 +1,57 @@
+@baseurl = http://127.0.0.1:8000/api/v1
+@token =  2|AlP6qclqsn1wTkjkfhZC3nE0nfYB30JVw3wvlnYTc7cc1534
+
+### GET ALL ANNOUNCEMENTS
+# ?page=1
+# ?page=2
+GET  {{baseurl}}/users?page=1 HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {{token}}
+Accept: application/json
+
+
+### GET ONE USER
+GET {{baseurl}}/users/11 HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {{token}}
+Accept: application/json
+
+
+### Register User
+POST  {{baseurl}}/users HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Authorization: Bearer {{token}}
+Accept: application/json
+
+name=Tests
+&email=test135ss4@gmail.com
+&password=12345678
+&password_confirmation=12345678
+
+
+### Update user details
+PUT {{baseurl}}/users/details/11 HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Authorization: Bearer {{token}}
+Accept: application/json
+
+name=Rudy N. Cana updateds
+&email=rudy.cana4ss@gmail.com
+
+
+### Update user password
+PUT {{baseurl}}/users/password/14 HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Authorization: Bearer {{token}}
+Accept: application/json
+
+current_password=admin12345678
+&password=1
+&password_confirmation=admin12345678
+
+
+### DELETE ONE USER
+DELETE  {{baseurl}}/users/2 HTTP/1.1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+Accept: application/json
